@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Autonomic Dysreflexia Volunteer Module</title>
+
+    <style>
+        body{
+            background-color:lavenderblush
+        }
+
+        div{
+            background-color:lavender;
+            padding: 20px;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            text-align: center;
+            max-width: 1000px;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        p{
+            font-size: 3em;
+            margin: 20px;
+        }
+
+        button{
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            border: 4px solid #000;
+        }
+
+        button:hover{
+            background-color:aliceblue;
+        }
+
+        button:active{
+            background-color: #000;
+            color:aqua;
+        }
+
+        div.introductory_shpiel{
+            background-color:lavender;
+            padding: 20px;
+            font-family: 'Times New Roman';
+            font-weight: normal;
+            text-align: center;
+            max-width: 1000px;
+            border-radius: 5px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        p.introductory_shpiel{
+            font-size: small;
+            margin: 20px;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <div>
+        <p>Autonomic Dysreflexia Volunteer Module</p>
+        <button>click me</button>
+    </div>
+
+    <div class="introductory_shpiel">
+        <p class="introductory_shpiel">Autonomic Dysreflexia (AD) is a medical complication that can be
+            present in individuals with upper spinal cord injuries. As PACE 
+            volunteers who will be interacting with people in that demographic
+            it is important to be aware of AD and what steps to take if a participant 
+            is suspected or confirmed to be having an episode. In this module
+            you will learn the neurobiological mechanisms of AD, the possible symptoms,
+            and steps to take if an episode is suspected.
+        </p>
+    </div>
+
+    <h1 class="Section_1"><a href="file:///Users/c.mendelsohn/Desktop/Section%201-%20What%20is%20Autonomic%20Dysreflexia%3F.html">Section 1</a>
+</h1>
+    <h1 class="Section_2"><a href="file:///Users/c.mendelsohn/Desktop/Section%202-%20Why%20Autonomic%20Dysreflexia%20Matters%20to%20You.html">Section 2</a>
+</h1>
+    <h1 class="Section_3"><a href="file:///Users/c.mendelsohn/Desktop/Section%203-%20What%20to%20do%20if%20You%20Suspect%20an%20Episode%20of%20Autonomic%20Dysreflexia.html">Section 3</a>
+</h1>
+</body>
+<script>
+    var buttonElement = document.querySelector("button");
+    var textElement = document.querySelector("p")
+
+    buttonElement.addEventListener("click", changeText, false);
+
+    function changeText(e){
+        textElement.innerText = 'Wanted to see if the button thing worked';
+    }
+</script>
+
+</html>
